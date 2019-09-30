@@ -34,7 +34,7 @@ end
 
 def apply_clearance(cart)
   cart.each do |product_name, value|
-    value[:price] 
+    value[:price] -= value[:price]
   end
   cart
 end
